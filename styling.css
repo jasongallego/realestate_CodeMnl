@@ -1,0 +1,1440 @@
+/* variables */
+:root {
+  --primary: yellow;
+  --secondary: blue;
+}
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+
+/* base styles */
+body {
+  /*background: var(--secondary);*/
+  overflow-x: hidden;
+  font-family: "satoshi";
+}
+.button {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0, 6);
+  display: inline-block;
+}
+.button:hover {
+  color: #222;
+  background: var(--primary);
+}
+/* fonts */
+
+@font-face {
+  font-family: Satoshi;
+  src: url(fonts/Satoshi-Regular.ttf);
+}
+h1,
+h2,
+h3,
+h4 {
+  color: #332c2c;
+  font-weight: normal;
+}
+p,
+a,
+li {
+  color: #332c2c;
+}
+h1 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+h4 {
+  font-size: 1.1em;
+}
+.leading {
+  font-size: 1em;
+  opacity: 0.6;
+}
+.whiteningfontfromdarkBG {
+  color: #fafafa;
+}
+#whiteningfontfromdarkBG {
+  color: #fafafa;
+}
+
+/* mobile style */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.site-nav {
+  margin: 0 20px;
+}
+.nav-items {
+  display: none;
+}
+.site-nav img {
+  grid-column: 1/4;
+  grid-row: 1;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid(--primary);
+}
+#border {
+  padding: 0 20px 20px 20px;
+  left: 24px;
+  box-sizing: border-box;
+  margin: 0px 10px;
+  position: absolute;
+  left: 1px;
+  border: 4px solid rgba(65, 56, 56, 0.4);
+  border-radius: 30px;
+}
+.smallfont {
+  grid-column: 1/6;
+}
+
+.welcome-img {
+  grid-column: 1/9;
+}
+.welcome-img img {
+  position: relative;
+  width: 105%;
+  height: 109%;
+  border-radius: 0px 0px 26px 26px;
+}
+.btnlabel {
+  margin: 20px 0px;
+  background-color: #2c2c33;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 10px;
+  width: 100px;
+  height: 56px;
+}
+#GetyourdreambigFont {
+  width: 272px;
+  height: 98px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+}
+#containergapping {
+  /*background: url(asset/newhouses/house10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;*/
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  position: absolute;
+  width: 285px;
+  height: 605px;
+  left: 100px;
+  top: 810px;
+  /*border: 4px solid black;
+  border-radius: 30px;*/
+}
+#findthebesthouselabel {
+  width: 285px;
+  height: 82px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 41px;
+  text-align: center;
+  /*border: 4px solid black;
+  border-radius: 30px;*/
+}
+#containerflexing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 60px;
+  width: 170px;
+  height: 483px;
+  /* border: 4px solid black;
+  border-radius: 30px;*/
+}
+.containerflexingcolumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 170px;
+  height: 121px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.bigfonts {
+  width: 113px;
+  height: 81px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 81px;
+  color: #332c2c;
+}
+#containergappingdisplay {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 80px 24px;
+  gap: 10px;
+  position: absolute;
+  width: 375px;
+  height: 500px;
+  left: 25px;
+  top: 1450px;
+  background: rgba(217, 217, 217, 0.12);
+  /*border: 4px solid black;
+  border-radius: 30px;*/
+}
+#insidecontainergappingdisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px;
+  gap: 24px;
+  width: 327px;
+  height: 553px;
+  /*border: 4px solid rgba(65, 56, 56, 0.4);
+  border-radius: 30px;*/
+}
+#imagedisplay {
+  position: absolute;
+  width: 326px;
+  height: 236px;
+  left: 1px;
+  top: 0px;
+  background: #d9d9d9;
+  /*border: 4px solid red;
+  border-radius: 30px;*/
+}
+#displayimage {
+  position: absolute;
+  width: 388.97px;
+  height: 210.02px;
+  left: 14.52px;
+  top: 12.99px;
+}
+#completewithfuturisticcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 160px;
+  gap: 0px;
+  width: 335px;
+  height: 293px;
+  /* border: 4px solid blue;
+  border-radius: 30px;*/
+}
+
+/*
+QUETIONABLE BAKIT DI NAGANAITO
+
+#arrowupcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 319px;
+  height: 96px;
+  border: 4px;
+  border-color: brown;
+  border-radius: 30px;
+}*/
+#darkcontainergappingdisplay {
+  position: absolute;
+  width: 629.5px;
+  height: 463px;
+  left: 0px;
+  top: 2150px;
+  background: #2c2c33;
+}
+.couroselimgsize {
+  width: 288px;
+  height: 216px;
+  background: #d9d9d9;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+#seemoreandarrow {
+  display: none;
+}
+#insidedarkcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: absolute;
+  width: 605.5px;
+  height: 343px;
+  left: 24px;
+  /*top: 2391px;*/
+}
+#recomendedhouse {
+  width: 306px;
+  height: 32px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+}
+#carouselcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 28px;
+  width: 605.5px;
+  height: 271px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+#secondpartcarousel {
+  display: none;
+}
+.Lcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 78.5px;
+  width: 288.5px;
+  height: 43px;
+}
+#priceflexandstyle {
+  width: 153px;
+  height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+#icontextopacity {
+  width: 98px;
+  height: 18px;
+  font-family: "Satoshi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 180%;
+  color: #ffffff;
+}
+#customersaidcontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 60px 24px;
+  gap: 10px;
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  left: 0px;
+  top: 2610px;
+  background: #33333a;
+}
+.ourcustomersaidcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 50px;
+  gap: 32px;
+  width: 350px;
+  height: 330px;
+}
+.hide {
+  display: none;
+}
+#ronandcus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  padding-top: 40px;
+  width: 121px;
+  height: 54px;
+}
+.arrows {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 60px 100px;
+  gap: 20px;
+  width: 126px;
+  height: 19px;
+}
+#contactuscontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+  position: absolute;
+  width: 280px;
+  height: 263px;
+  left: 118.5px;
+  top: 3230px;
+  text-align: center;
+}
+#contactbuttoncontainers {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 190px;
+  height: 132px;
+}
+.moreaboutusbuttonFont {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 32px;
+  gap: 10px;
+  width: 175px;
+  height: 56px;
+  border: 1px solid #2c2c33;
+  background: #2c2c33;
+  color: #fafafa;
+}
+.contactusbuttonFont {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 32px;
+  gap: 10px;
+  width: 175px;
+  height: 56px;
+  border: 1px solid #2c2c33;
+}
+#contactusbigfont {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  color: #332c2c;
+}
+
+#footercontainer {
+  position: absolute;
+  width: 327px;
+  height: 165px;
+  left: 24px;
+  top: 3667px;
+}
+
+.footerlogo {
+  position: absolute;
+  width: 245px;
+  height: 80px;
+  left: 100px;
+  top: 25px;
+}
+.footercategory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 20px;
+  position: absolute;
+  width: 302px;
+  height: 68px;
+  left: 0px;
+  top: 67px;
+}
+#footerbardesign {
+  position: absolute;
+  width: 327px;
+  height: 0px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #2c2c33;
+}
+#footnavcontainer {
+  position: absolute;
+  width: 360px;
+  height: 160px;
+  left: 12.5px;
+  top: 30px;
+  margin-top: 90px;
+  padding: 0px 10px;
+  gap: 20px 20px;
+  align-items: center;
+}
+.footercategoryclass {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 50px;
+  width: 302px;
+  height: 24px;
+}
+#navfontstyleandsize {
+  width: 73px;
+  height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #332c2c;
+}
+/* small tablet style */
+@media screen and (min-width: 620px) {
+}
+
+/* large tablets and laptop style */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+  .hambergermenu {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+  }
+  .site-nav img {
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid(--primary);
+  }
+  .site-nav .nav-items {
+    grid-column: 5/9;
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    gap: 10px;
+    border-bottom: 3px solid(--primary);
+  }
+  .site-nav {
+    margin: 0 20px;
+  }
+  .smallfont {
+    grid-column: 1/3;
+  }
+  .welcome-img {
+    grid-column: 4/9;
+  }
+  .welcome-img img {
+    position: relative;
+    width: 105%;
+    height: 106%;
+    border-radius: 0px 26px 26px 0px;
+  }
+  #containergapping {
+    /*background: url(asset/newhouses/house10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    /*gap: 191px;*/
+    position: absolute;
+    width: 908px;
+    height: 121px;
+    left: 25px;
+    top: 650px;
+    /*border: 4px solid blue;
+    border-radius: 30px;*/
+  }
+
+  #findthebesthouselabel {
+    width: 500px;
+    height: 82px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    /*border: 4px solid red;
+    border-radius: 30px;*/
+  }
+
+  #containerflexing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    width: 600px;
+    height: 121px;
+    /*border: 4px solid yellow;
+    border-radius: 30px;*/
+  }
+  .containerflexingcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 170px;
+    height: 121px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .bigfonts {
+    width: 113px;
+    height: 81px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 81px;
+    color: #332c2c;
+  }
+  #containergappingdisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 110px;
+    gap: 10px;
+    position: absolute;
+    width: 760px;
+    height: 420px;
+    left: 0px;
+    top: 885px;
+    background: rgba(217, 217, 217, 0.12);
+    /*border: 4px solid black;
+    border-radius: 30px;*/
+  }
+  #insidecontainergappingdisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 450px;
+    gap: 120px;
+    width: 1200px;
+    height: 486px;
+    /*border: 4px solid orange;
+    border-radius: 30px;*/
+  }
+  #imagedisplay {
+    width: 470px;
+    height: 480px;
+    left: 50px;
+    top: 100px;
+    background: #d9d9d9;
+    /*border: 4px solid red;
+    border-radius: 30px;*/
+  }
+  #displayimage {
+    position: absolute;
+    width: 450px;
+    height: 430px;
+    left: 4px;
+    top: 24px;
+    /*border: 4px solid green;
+    border-radius: 30px;*/
+  }
+  #completewithfuturisticcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    width: 400px;
+    height: 600px;
+    padding: 0px;
+    /*border: 4px solid blue;
+  border-radius: 30px;*/
+  }
+  #arrowupcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 440px;
+    height: 132px;
+    /*border: 4px solid pink;
+  border-radius: 30px;*/
+  }
+
+  #darkcontainergappingdisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 50px 70px;
+    gap: 10px;
+    position: absolute;
+    width: 860px;
+    height: 800px;
+    left: 0px;
+    top: 1560px;
+
+    background: #2c2c33;
+  }
+  .couroselimgsize {
+    width: 350px;
+    height: 278px;
+    background: #d9d9d9;
+  }
+
+  #darkcontentflexingrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+    width: 700px;
+    height: 54px;
+  }
+
+  #seemoreandarrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 28px;
+    width: 197px;
+    height: 50px;
+  }
+  #seemorefont {
+    width: 117px;
+    height: 50px;
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+  #insidedarkcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+    position: absolute;
+    width: 890px;
+    height: 800px;
+    left: 150px;
+  }
+  #recomendedhouse {
+    width: 306px;
+    height: 32px;
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  #carouselcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+    width: 605.5px;
+    height: 271px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  #secondpartcarousel {
+    display: flex;
+  }
+  .Lcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 78.5px;
+    width: 300.5px;
+    height: 43px;
+  }
+  #priceflexandstyle {
+    width: 153px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  #icontextopacity {
+    width: 98px;
+    height: 18px;
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 180%;
+    color: #ffffff;
+  }
+  #customersaidcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 123px;
+    gap: 10px;
+    position: absolute;
+    width: 740px;
+    height: 489px;
+    left: 0px;
+    top: 2480px;
+    background: #33333a;
+    /*border: 4px solid red;*/
+  }
+  .ourcustomersaidcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 530px;
+    width: 750px;
+    height: 450px;
+    /*border: 4px solid blue;*/
+  }
+  .hide {
+    display: none;
+    /*border: 4px solid yellow;*/
+  }
+  #ronandcus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    padding-top: 40px;
+    width: 121px;
+    height: 54px;
+    /*border: 4px solid green;*/
+  }
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 60px 100px;
+    gap: 20px;
+    width: 126px;
+    height: 19px;
+    /*border: 4px solid pink;*/
+  }
+  #contactuscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 280px;
+    height: 263px;
+    left: 340px;
+    top: 3230px;
+    text-align: center;
+  }
+  #contactbuttoncontainers {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 380px;
+    height: 56px;
+  }
+  .moreaboutusbuttonFont {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 32px;
+    gap: 10px;
+    width: 175px;
+    height: 56px;
+    border: 1px solid #2c2c33;
+    background: #2c2c33;
+    color: #fafafa;
+  }
+  .contactusbuttonFont {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 32px;
+    gap: 10px;
+    width: 175px;
+    height: 56px;
+    border: 1px solid #2c2c33;
+  }
+  #contactusbigfont {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    color: #332c2c;
+  }
+
+  #footercontainer {
+    position: absolute;
+    width: 1220px;
+    height: 83px;
+    left: 260px;
+    top: 3580px;
+  }
+
+  .footerlogo {
+    position: absolute;
+    width: 245px;
+    height: 80px;
+    left: 100px;
+    top: 25px;
+  }
+  .footercategory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 302px;
+    height: 68px;
+    left: 0px;
+    top: 67px;
+  }
+  #footerbardesign {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #2c2c33;
+  }
+  #footnavcontainer {
+    position: absolute;
+    width: 360px;
+    height: 160px;
+    left: 12.5px;
+    top: 30px;
+    margin-top: 90px;
+    padding: 0px 10px;
+    gap: 20px 20px;
+    align-items: center;
+  }
+  .footercategoryclass {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    width: 302px;
+    height: 24px;
+  }
+  #navfontstyleandsize {
+    width: 73px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #332c2c;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 20px;
+  }
+  .hambergermenu {
+    display: none;
+  }
+  .nav-items {
+    display: flex;
+  }
+  .site-nav img {
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid(--primary);
+  }
+  .site-nav .nav-items {
+    grid-column: 6/9;
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    gap: 10px;
+    border-bottom: 3px solid(--primary);
+  }
+  .site-nav {
+    margin: 0 20px;
+  }
+  .smallfont {
+    grid-column: 1/3;
+  }
+  .welcome-img {
+    grid-column: 4/9;
+  }
+  .welcome-img img {
+    position: relative;
+    width: 105%;
+    height: 106%;
+    border-radius: 0px 26px 26px 0px;
+  }
+  #containergapping {
+    /*background: url(asset/newhouses/house10.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    /*gap: 191px;*/
+    position: absolute;
+    width: 908px;
+    height: 121px;
+    left: 25px;
+    top: 650px;
+    /*border: 4px solid blue;
+    border-radius: 30px;*/
+  }
+
+  #findthebesthouselabel {
+    width: 500px;
+    height: 82px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    /*border: 4px solid red;
+    border-radius: 30px;*/
+  }
+
+  #containerflexing {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 60px;
+    width: 600px;
+    height: 121px;
+    /*border: 4px solid yellow;
+    border-radius: 30px;*/
+  }
+  .containerflexingcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 170px;
+    height: 121px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  .bigfonts {
+    width: 113px;
+    height: 81px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 81px;
+    color: #332c2c;
+  }
+  #containergappingdisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 110px;
+    gap: 10px;
+    position: absolute;
+    width: 760px;
+    height: 420px;
+    left: 0px;
+    top: 885px;
+    background: rgba(217, 217, 217, 0.12);
+    /*border: 4px solid black;
+    border-radius: 30px;*/
+  }
+  #insidecontainergappingdisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-left: 450px;
+    gap: 120px;
+    width: 1200px;
+    height: 486px;
+    /*border: 4px solid orange;
+    border-radius: 30px;*/
+  }
+  #imagedisplay {
+    width: 470px;
+    height: 480px;
+    left: 50px;
+    top: 100px;
+    background: #d9d9d9;
+    /*border: 4px solid red;
+    border-radius: 30px;*/
+  }
+  #displayimage {
+    position: absolute;
+    width: 450px;
+    height: 430px;
+    left: 4px;
+    top: 24px;
+    /*border: 4px solid green;
+    border-radius: 30px;*/
+  }
+  #completewithfuturisticcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    width: 400px;
+    height: 600px;
+    padding: 0px;
+    /*border: 4px solid blue;
+  border-radius: 30px;*/
+  }
+  #arrowupcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+    width: 440px;
+    height: 132px;
+    /*border: 4px solid pink;
+  border-radius: 30px;*/
+  }
+
+  #darkcontainergappingdisplay {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 50px 70px;
+    gap: 10px;
+    position: absolute;
+    width: 860px;
+    height: 800px;
+    left: 0px;
+    top: 1560px;
+
+    background: #2c2c33;
+  }
+  .couroselimgsize {
+    width: 350px;
+    height: 278px;
+    background: #d9d9d9;
+  }
+
+  #darkcontentflexingrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 100px;
+    width: 700px;
+    height: 54px;
+  }
+
+  #seemoreandarrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 28px;
+    width: 197px;
+    height: 50px;
+  }
+  #seemorefont {
+    width: 117px;
+    height: 50px;
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    color: #ffffff;
+  }
+
+  #insidedarkcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 80px;
+    position: absolute;
+    width: 890px;
+    height: 800px;
+    left: 150px;
+  }
+  #recomendedhouse {
+    width: 306px;
+    height: 32px;
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  #carouselcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 28px;
+    width: 605.5px;
+    height: 271px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+  #secondpartcarousel {
+    display: flex;
+  }
+  .Lcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 78.5px;
+    width: 300.5px;
+    height: 43px;
+  }
+  #priceflexandstyle {
+    width: 153px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+  }
+  #icontextopacity {
+    width: 98px;
+    height: 18px;
+    font-family: "Satoshi";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 180%;
+    color: #ffffff;
+  }
+  #customersaidcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 123px;
+    gap: 10px;
+    position: absolute;
+    width: 740px;
+    height: 489px;
+    left: 0px;
+    top: 2480px;
+    background: #33333a;
+    /*border: 4px solid red;*/
+  }
+  .ourcustomersaidcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 530px;
+    width: 750px;
+    height: 450px;
+    /*border: 4px solid blue;*/
+  }
+  .hide {
+    display: none;
+    /*border: 4px solid yellow;*/
+  }
+  #ronandcus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    padding-top: 40px;
+    width: 121px;
+    height: 54px;
+    /*border: 4px solid green;*/
+  }
+  .arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 60px 100px;
+    gap: 20px;
+    width: 126px;
+    height: 19px;
+    /*border: 4px solid pink;*/
+  }
+  #contactuscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    position: absolute;
+    width: 280px;
+    height: 263px;
+    left: 340px;
+    top: 3230px;
+    text-align: center;
+  }
+  #contactbuttoncontainers {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 380px;
+    height: 56px;
+  }
+  .moreaboutusbuttonFont {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 12px 32px;
+    gap: 10px;
+    width: 175px;
+    height: 56px;
+    border: 1px solid #2c2c33;
+    background: #2c2c33;
+    color: #fafafa;
+  }
+  .contactusbuttonFont {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px 32px;
+    gap: 10px;
+    width: 175px;
+    height: 56px;
+    border: 1px solid #2c2c33;
+  }
+  #contactusbigfont {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    color: #332c2c;
+  }
+
+  #footercontainer {
+    position: absolute;
+    width: 1220px;
+    height: 83px;
+    left: 260px;
+    top: 3580px;
+  }
+
+  .footerlogo {
+    position: absolute;
+    width: 245px;
+    height: 80px;
+    left: 100px;
+    top: 25px;
+  }
+  .footercategory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 20px;
+    position: absolute;
+    width: 302px;
+    height: 68px;
+    left: 0px;
+    top: 67px;
+  }
+  #footerbardesign {
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    left: 0px;
+    top: 0px;
+    border: 1px solid #2c2c33;
+  }
+  #footnavcontainer {
+    position: absolute;
+    width: 360px;
+    height: 160px;
+    left: 12.5px;
+    top: 30px;
+    margin-top: 90px;
+    padding: 0px 10px;
+    gap: 20px 20px;
+    align-items: center;
+  }
+  .footercategoryclass {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 50px;
+    width: 302px;
+    height: 24px;
+  }
+  #navfontstyleandsize {
+    width: 73px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #332c2c;
+  }
+}
+
+/* desktop styles BIG SCEENS 1536-1920*/
+@media screen and (min-width: 1536px) {
+}
+
+/*
+<link rel="stylesheet" href="./reset.css" />
+*/
